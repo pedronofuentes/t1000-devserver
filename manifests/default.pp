@@ -88,7 +88,8 @@ puphpet::ini { 'xdebug':
     'xdebug.remote_connect_back = 1',
     'xdebug.remote_enable = 1',
     'xdebug.remote_handler = "dbgp"',
-    'xdebug.remote_port = 9000'
+    'xdebug.remote_port = 9000',
+    'xdebug.remote_host = 192.168.56.1',
   ],
   ini     => '/etc/php5/conf.d/zzz_xdebug.ini',
   notify  => Service['apache'],
